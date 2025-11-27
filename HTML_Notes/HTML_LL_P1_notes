@@ -5,7 +5,7 @@ OUTLINE:
   #HTML EDITIORS
   #HTML BASICS
 ----------------------------------------------------------------------------------------------------------------------------------------------------
-#HTML CODE:
+#HTML HOME:
 <!DOCTYPE html>
 <html>        
 <head>           
@@ -19,7 +19,8 @@ OUTLINE:
 </body> 
 </html> 
 ----------------------------------------------------------------------------------------------------------------------------------------------------
-PURPOSE OF EACH:
+HTML INTRODUCTIONS
+  PURPOSE OF EACH:
 <!DOCTYPE html> Preventing Browser quirk mode, this ensures effort to follow modern HTML specifications rather than outdated uncompatible methods
 <html> starting point structure of a html document
 <head> meta information about the HTML page
