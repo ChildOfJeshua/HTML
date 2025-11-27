@@ -1,4 +1,4 @@
-HTML -  standard markup language
+HTML - standard markup language
   Additional Supplemental Languages:
     CSS (Cascading Style Sheets) - saves a lot of work, control the layout of multiple webpages all at once
     JAVASCRIPT -  makes HTML page more dynamic and interactive
