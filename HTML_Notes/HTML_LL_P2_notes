@@ -25,10 +25,30 @@ OUTLINE:
         - <img src="img_girl.jpg" alt="Girl with a jacket">
   style: font,color,size and more
         - <p style="color:red;">This is a red paragraph.</p>
+        - <h1 style="font-size:60px;">Heading 1</h1>
   lang: declare the language of the HTMK page
         - <html lang="en">
   title: Tooltip or when your mouse hovers over element
         - <p title="I'm a tooltip">This is a paragraph.</p>
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 #HTML HEADINGS
-  
+  - 1 to 6 as first heading is the most important to 6 being the least important
+  - <h1> Heading1 </h1> Page Title
+  - <h2> Heading2 </h2> Section Title
+  - <h3> Heading3 </h3> Sub-sections
+  - <h4> Heading4 </h4>
+  - <h5> Heading5 </h5>
+  - <h6> Heading6 </h6>
+
+  - <h1> default is 16px but you can resize: <h1 style="font-size:60px;">Heading 1</h1>
+  Example:
+      <h1>Travel Guide</h1>
+      
+      <h2>Europe</h2>
+      <h3>France</h3>
+      <h3>Italy</h3>
+      
+      <h2>Asia</h2>
+      <h3>India</h3>
+      <h3>Thailand</h3>
+----------------------------------------------------------------------------------------------------------------------------------------------------      
