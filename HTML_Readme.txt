@@ -1,4 +1,8 @@
 HTML -  standard markup language
+  Additional:
+    CSS (Cascading Style Sheets) - saves a lot of work, control the layout of multiple webpages all at once
+    JAVASCRIPT -  makes HTML page more dynamic and interactive
+
   #NOTES SECTION
       HTML_LL_P1_notes - HOME | INTRODUCTIONS | EDITORS | BASICS
       HTML_LL_P2_notes - ELEMENTS | ATTRIBUTES | HEADINGS | PARAGRAPHS
