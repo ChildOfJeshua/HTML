@@ -1,9 +1,163 @@
 HTML PART 4 NOTES:
 OUTLINE:
   #HTML CSS
+    - Cascading Style Sheets (CSS) is used to format the layout of a webpage.
+    - Anything applied to parent class is going to apply to all children elements within parent.
+      - Ex: blue to body -> blue to headings,paragraphs, and other text elements within the body unless you specify something else. 
+    Adding CSS to HTML:
+      Inline - by using the style attribute inside HTML elements
+      Internal - by using the <style> element into the <head> section
+      External - by using a <link> element to link to an external CSS file
+      **Most Common way is to keep CSS in external file**
+    INLINE EXAMPLE:
+      <h1 style="color:blue;">A Blue Heading</h1>
+      <p style="color:red;">A red paragraph.</p>
+    INTERNAL EXAMPLE:
+        <!DOCTYPE html>
+        <html>
+        <head>
+        <style>
+        body {background-color: powderblue;}
+        h1   {color: blue;}
+        p    {color: red;}
+        </style>
+        </head>
+        <body>
+    EXTERNAL EXAMPLE: **To use an external style sheet, add a link to it in the <head> section of each HTML page**
+        <!DOCTYPE html>
+        <html>
+        <head>
+          <link rel="stylesheet" href="styles.css">
+        </head>
+        <body>
+        
+        <h1>This is a heading</h1>
+        <p>This is a paragraph.</p>
+        
+        </body>
+        </html>
+
+      style.css: 
+          body {
+            background-color: powderblue;
+          }
+          h1 {
+            color: blue;
+          }
+          p {
+            color: red;
+          }
+    EXTERNAL_EXTENDED INFORMATION:
+        CSS BORDER:
+          p {
+              border: 2px solid powderblue;
+            }
+        CSS PADDING:
+            p {
+              border: 2px solid powderblue;
+              padding: 30px;
+            }
+        CSS MARGIN:
+            p {
+              border: 2px solid powderblue;
+              margin: 50px;
+            }
+        LINK TO EXTERNAL CSS: 
+            - SAME FOLDER:
+                <head>
+                  <link rel="stylesheet" href="styles.css">
+                </head>
+            - DIFFERENT FOLDER:
+                <head>
+                  <link rel="stylesheet" href="/html/styles.css">
+                </head>
+----------------------------------------------------------------------------------------------------------------------------------------------------                  
   #HTML LINKS
+    -HYPERLINKS
+        <a href="https://www.w3schools.com/">Visit W3Schools.com!</a>
+    -THE TARGET ATTRIBUTE (new tab)
+        <a href="https://www.w3schools.com/" target="_blank">Visit W3Schools!</a>
+    -ABSOLUTE URLS VS RELATIVE URLS
+        Absolute URLS: Full address: <p><a href="https://www.w3.org/">W3C</a></p> | 
+        Relative URLS: Local link: <p><a href="html_images.asp">HTML Images</a></p>
+        Relative URLS: same folder: <a href="default.asp">HTML tutorial</a>
+    -USE IMAGE AS A LINK
+        <a href="default.asp">
+        <img src="smiley.gif" alt="HTML tutorial" style="width:42px;height:42px;">
+        </a>
+    -LINK TO EMAIL ADDRESS
+        <a href="mailto:someone@example.com">Send email</a>
+    -BUTTON AS A LINK
+        <button onclick="document.location='default.asp'">HTML Tutorial</button>
+    -LINK TITLES
+        <a href="https://www.w3schools.com/html/" title="Go to W3Schools HTML section">Visit our HTML Tutorial</a>
+
+
+    -LINK COLORS
+      #An HTML link is displayed in a different color depending on whether it has been visited, is unvisited, or is active.
+      Internal method:
+          <style>
+          a:link {
+            color: green;
+            background-color: transparent;
+            text-decoration: none;
+          }
+          a:visited {
+            color: pink;
+            background-color: transparent;
+            text-decoration: none;
+          }
+          a:hover {
+            color: red;
+            background-color: transparent;
+            text-decoration: underline;
+          }
+          a:active {
+            color: yellow;
+            background-color: transparent;
+            text-decoration: underline;
+          }
+          
+    -LINK BUTTONS
+      Internal method: 
+      <style>
+      a:link, a:visited {
+        background-color: #f44336;
+        color: white;
+        padding: 15px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+      }
+      
+      a:hover, a:active {
+        background-color: red;
+      }
+      </style>
+
+    -LINK BOOKMARKS
+      <body>
+      <p><a href="#C4">Jump to Chapter 4</a></p>
+      <h2>Chapter 1</h2>
+      <p>This chapter explains ba bla bla</p>
+      
+      <h2>Chapter 2</h2>
+      <p>This chapter explains ba bla bla</p>
+      
+      <h2>Chapter 3</h2>
+      <p>This chapter explains ba bla bla</p>
+      
+      <h2 id="C4">Chapter 4</h2>
+      <p>This chapter explains ba bla bla</p>
+      </body> 
+    -LINK BOOKMARKS, on another page
+      <a href="html_demo.html#C4">Jump to Chapter 4</a>
+----------------------------------------------------------------------------------------------------------------------------------------------------  
   #HTML IMAGES
+----------------------------------------------------------------------------------------------------------------------------------------------------
   #HTML FAVICON
+----------------------------------------------------------------------------------------------------------------------------------------------------
   #HTML PAGE TITLE
+----------------------------------------------------------------------------------------------------------------------------------------------------
   #HTML TABLES
 ----------------------------------------------------------------------------------------------------------------------------------------------------
