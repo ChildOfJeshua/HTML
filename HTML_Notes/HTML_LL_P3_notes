@@ -19,7 +19,97 @@ OUTLINE:
 ----------------------------------------------------------------------------------------------------------------------------------------------------
   #HTML FORMATTING
       -contains several elements for defining text with a special meaning.
+    Bold or Strong elements with texts
+      <p> <b>This text is bold</b> </p>
+      <p> <strong> This text is important! </strong> </p>
+    Italic or Emphasized Text
+      <p> <i> This text is italic </i> </p>
+      <p> <em> This text is emphasized </em> </p>
+    Small Text
+      <p> <small> This is some smaller text </small> </p>
+    Marked or Highlighted Text
+      <p> <mark> Do not forget to buy <mark> milk </milk> today. </p>
+    Deleted Texts get srtrike lines from browser
+      <p> My favorite color is <del> blue </del> red. </p>
+    Inserted Text into a document
+      <p> My favorite color is <del> blue </del> <ins> red </ins>. </p>
+    Subscript Text
+      <p> This is <sub>subscripted</sub> text. </p>
+    Superscripted Text
+      <p> This is <sup>superscripted</sup> text. </p>
+----------------------------------------------------------------------------------------------------------------------------------------------------
   #HTML QUOTATIONS
+      -  quotation and citation elements
+      Blockquote for Quotations (Long)
+          <p>Here is a quote from WWF's website:</p>
+          <blockquote cite="http://www.worldwildlife.org/who/index.html">
+              For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+          </blockquote>
+      Blockquote for Quotations (Short)
+          <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+      Abbreviations
+          <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+      Address for Contact Information:
+          <address>
+          Written by John Doe.<br>
+          Visit us at:<br>
+          Example.com<br>
+          Box 564, Disneyland<br>
+          USA
+          </address>
+      Cite For Work Title
+          <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+      Bi-directional Override
+          <bdo dir="rtl">This text will be written from right to left</bdo>
+----------------------------------------------------------------------------------------------------------------------------------------------------
   #HTML COMMENTS
-  #HTML COLORS
+    -HTML comments are not displayed in the browser, but they can help document your HTML source code.
+  Comment Tag:
+      <!-- Write your comments here -->
+----------------------------------------------------------------------------------------------------------------------------------------------------
+  #HTML COLORS (CSS)
+    - HTML colors are specified with predefined color names, or with RGB, HEX, HSL, RGBA, or HSLA values.
+    Color Names & Background Colors:
+      <h1 style="background-color:Tomato;">Tomato</h1>
+      <h1 style="background-color:Orange;">Orange</h1>
+      <h1 style="background-color:DodgerBlue;">DodgerBlue</h1>
+      <h1 style="background-color:MediumSeaGreen;">MediumSeaGreen</h1>
+      <h1 style="background-color:Gray;">Gray</h1>
+      <h1 style="background-color:SlateBlue;">SlateBlue</h1>
+      <h1 style="background-color:Violet;">Violet</h1>
+      <h1 style="background-color:LightGray;">LightGray</h1>
+    Text Color: 
+      <h1 style="color:Tomato;">Hello World</h1>
+      <p style="color:DodgerBlue;">Lorem ipsum...</p>
+      <p style="color:MediumSeaGreen;">Ut wisi enim...</p>
+    Border Color:
+      <h1 style="border:2px solid Tomato;">Hello World</h1>
+      <h1 style="border:2px solid DodgerBlue;">Hello World</h1>
+      <h1 style="border:2px solid Violet;">Hello World</h1>
+    Color Values:
+      RGB: (256 x 256 x 256) = 16,777,216 possible colors: 
+      -> RGB color value represents RED, GREEN, and BLUE light sources.
+          <h1 style="background-color:rgb(255, 0, 0);">rgb(255, 0, 0)</h1> Red
+          <h1 style="background-color:rgb(0, 0, 255);">rgb(0, 0, 255)</h1> Blue
+          <h1 style="background-color:rgb(0, 255, 0);">rgb(0, 255, 0)</h1> Green
+      RGBA:   
+      -> RGBA color value is an extension of RGB with an Alpha channel (opacity).
+        <h1 style="background-color:rgba(255, 99, 71, 0);">rgba(255, 99, 71, 0)</h1>
+        <h1 style="background-color:rgba(255, 99, 71, 0.2);">rgba(255, 99, 71, 0.2)</h1>
+        <h1 style="background-color:rgba(255, 99, 71, 0.4);">rgba(255, 99, 71, 0.4)</h1>
+        <h1 style="background-color:rgba(255, 99, 71, 0.6);">rgba(255, 99, 71, 0.6)</h1>
+        <h1 style="background-color:rgba(255, 99, 71, 0.8);">rgba(255, 99, 71, 0.8)</h1>
+        <h1 style="background-color:rgba(255, 99, 71, 1);">rgba(255, 99, 71, 1)</h1>
+      HEX: (A-F & 0 to 9) 
+        -> Where rr (red), gg (green) and bb (blue) are hexadecimal values between 00 and ff (same as decimal 0-255).
+        <h1 style="background-color:#ff0000;">#ff0000</h1>
+        <h1 style="background-color:#0000ff;">#0000ff</h1>
+        <h1 style="background-color:#00ff00;">#00ff00</h1>
+      HSL: (hue, saturation, lightness) 
+        -> Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue.
+        -> Saturation is a percentage value. 0% means a shade of gray, and 100% is the full color.
+        -> Lightness is also a percentage value. 0% is black, and 100% is white.
+        <h1 style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</h1>
+        <h1 style="background-color:hsl(240, 100%, 50%);">hsl(240, 100%, 50%)</h1>
+        <h1 style="background-color:hsl(120, 100%, 50%);">hsl(240, 100%, 50%)</h1>
 ----------------------------------------------------------------------------------------------------------------------------------------------------
