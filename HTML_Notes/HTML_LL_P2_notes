@@ -6,3 +6,29 @@ OUTLINE:
   #HTML PARAGRAPHS
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 #HTML ELEMENTS
+  -defined by a start tag, comse content and an end tag. 
+  -<P> same as <p> so no case sensitivity however consistency is better to have.
+
+  ex: <tagname> Content goes here </tagname>
+  <p> may still display correctly but don't forget the end tag. </p>
+----------------------------------------------------------------------------------------------------------------------------------------------------
+#HTML ATTRIBUTES
+  - provide additional information about elements.
+  - always quote attribute values
+  href: specfic url
+        - <a> hyperlink: <a href="https://www.w3schools.com">Visit W3Schools</a>
+  src: path to image displayed
+        - <img src="img_girl.jpg">
+  width and height: specific w x h of the image (in pixels)
+        - <img src="img_girl.jpg" width="500" height="600">
+  alt: Backup fail test for image if not showing
+        - <img src="img_girl.jpg" alt="Girl with a jacket">
+  style: font,color,size and more
+        - <p style="color:red;">This is a red paragraph.</p>
+  lang: declare the language of the HTMK page
+        - <html lang="en">
+  title: Tooltip or when your mouse hovers over element
+        - <p title="I'm a tooltip">This is a paragraph.</p>
+----------------------------------------------------------------------------------------------------------------------------------------------------
+#HTML HEADINGS
+  
