@@ -52,3 +52,8 @@ OUTLINE:
       <h3>India</h3>
       <h3>Thailand</h3>
 ----------------------------------------------------------------------------------------------------------------------------------------------------      
+#HTML PARAGRAPHS
+  - <p> starts a new line, and browsers automatically add some white space (a margin) before and after a paragraph
+  - <hr> can be used as horizontal line, thematic break in HTML page used to seperate content.  <hr> empty tag so that means no end tag for it. 
+  - <br> line break without starting a new paragraph | empty tag as well so no end tag
+  - <pre> preserve elements with preformatted text. 
