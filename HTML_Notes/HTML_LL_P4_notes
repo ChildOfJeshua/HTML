@@ -309,4 +309,59 @@ OUTLINE:
           <td>10</td>
         </tr>
       </table>
-----------------------------------------------------------------------------------------------------------------------------------------------------
+
+    How to Add a Border
+      table, th, td {
+        border: 1px solid black;
+      }
+
+    Collasped Border (thinly defined lines)
+        table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    Styled Table Border
+      table, th, td {
+        border: 1px solid white;
+        border-collapse: collapse;
+      }
+      th, td {
+        background-color: #96D4D4;
+      }
+    Round Table Borders
+        table, th, td {
+          border: 1px solid black;
+          border-radius: 10px;
+        }
+    Dotted Table Borders
+         th, td {
+          border-style: dotted;
+        }
+    Border Colors
+         th, td {
+          border-color: #96D4D4;
+        }
+    Table Width Adjustment:
+      <table style="width:100%">
+        <tr>
+          <th style="width:70%">Firstname</th>
+          <th>Lastname</th> 
+          <th>Age</th>
+        </tr>
+      <table>
+    Table Height Adjustment:
+      <table style="width:100%">
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th> 
+          <th>Age</th>
+        </tr>
+        <tr style="height:200px">
+          <td>Jill</td>
+          <td>Smith</td>
+          <td>50</td>
+        </tr>
+      </table>
+
+  Table Headers <th>
+      ----------------------------------------------------------------------------------------------------------------------------------------------------
