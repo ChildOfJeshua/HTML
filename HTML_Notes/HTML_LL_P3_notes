@@ -1,6 +1,12 @@
 HTML PART 3 NOTES:
 OUTLINE:
   #HTML STYLES
+  #HTML FORMATTING
+  #HTML QUOTATIONS
+  #HTML COMMENTS
+  #HTML COLORS
+----------------------------------------------------------------------------------------------------------------------------------------------------
+  #HTML STYLES
       -style attribute as stated before is used to add styles to elements, such as color, font, size and more. 
       -CSS plays a big role as "property:value;" is CSS property and the value is a CSS value.
       ->SYNTAX: <tagname style="property:value;">
