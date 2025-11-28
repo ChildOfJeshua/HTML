@@ -1,6 +1,13 @@
 HTML PART 4 NOTES:
 OUTLINE:
   #HTML CSS
+  #HTML LINKS
+  #HTML IMAGES
+  #HTML FAVICON
+  #HTML PAGE TITLE
+  #HTML TABLES
+----------------------------------------------------------------------------------------------------------------------------------------------------
+  #HTML CSS
     - Cascading Style Sheets (CSS) is used to format the layout of a webpage.
     - Anything applied to parent class is going to apply to all children elements within parent.
       - Ex: blue to body -> blue to headings,paragraphs, and other text elements within the body unless you specify something else. 
