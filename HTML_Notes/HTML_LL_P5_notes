@@ -8,3 +8,63 @@ OUTLINE:
   #HTML BUTTONS
   #HTML IFRAMES
 ----------------------------------------------------------------------------------------------------------------------------------------------------
+  #HTML LISTS - HTML lists allow web developers to group a set of related items in lists.
+    UNORDERED LIST - The list items will be marked with bullets (small black circles) by default: <ul> <li>
+        <ul>
+          <li>Coffee</li>
+          <li>Tea</li>
+          <li>Milk</li>
+        </ul>
+    different styles: 
+          Disc: <ul style="list-style-type:disc;">
+          Cirle: <ul style="list-style-type:circle;">
+          Square: <ul style="list-style-type:square;">
+          No list marker: <ul style="list-style-type:none;">
+          Nested html lists: nested html list:
+                  <ul>
+                    <li>Coffee</li>
+                    <li>Tea
+                      <ul>
+                        <li>Black tea</li>
+                        <li>Green tea</li>
+                      </ul>
+                    </li>
+                    <li>Milk</li>
+                  </ul>
+    ORDERED LIST - The list items will be marked with numbers by default: <ol> <li>
+        <ol>
+          <li>Coffee</li>
+          <li>Tea</li>
+          <li>Milk</li>
+        </ol>
+    different styles: 
+        <ol type="1"> numbers by default
+        <ol type="A"> uppercase letters
+        <ol type="a"> lowercase letters
+        <ol type="I"> upper roman letters
+        <ol type="i"> lowercase roman letters
+        <ol start="50"> numbers incrementing from 50 by set number
+        Nested HTML Lists
+              <ol>
+                <li>Coffee</li>
+                <li>Tea
+                  <ol>
+                    <li>Black tea</li>
+                    <li>Green tea</li>
+                  </ol>
+                </li>
+                <li>Milk</li>
+              </ol>
+
+
+
+    DESCRIPTION LIST - A description list is a list of terms, with a description of each term: <dl> <dt> <dd>
+      <dl>
+        <dt>Coffee</dt>
+        <dd>- black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>- white cold drink</dd>
+      </dl> 
+----------------------------------------------------------------------------------------------------------------------------------------------------
+   #HTML BLOCK & INLINE
+
