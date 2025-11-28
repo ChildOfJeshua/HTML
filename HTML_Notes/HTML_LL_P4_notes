@@ -370,5 +370,208 @@ OUTLINE:
         </tr>
       </table>
 
-  Table Headers <th>
-      ----------------------------------------------------------------------------------------------------------------------------------------------------
+  Table Headers #<th> natural columns
+
+    <table style="width:100%">
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+      </tr>
+    </table>
+
+  Vertical Table Headers #<th> for just the first one 
+    <table style="width:100%">
+      <tr>
+        <th>Firstname</th>
+        <td>Jill</td>
+        <td>Eve</td>
+      </tr>
+      <tr>
+        <th>Lastname</th>
+        <td>Smith</td>
+        <td>Jackson</td>
+      </tr>
+      <tr>
+        <th>Age</th>  
+        <td>50</td>
+        <td>94</td>
+      </tr>
+    </table>
+
+  Align Table Headers (CSS) internal, can be external
+    th {
+    text-align: left;
+  }
+
+  Header or Column for Multiple Rows
+    <table style="width:100%">
+      <tr>
+        <th colspan="2">Name</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+    </table>
+
+  Header for the entire table using <caption> tag
+    <table style="width:100%">
+      <caption>Monthly savings</caption>
+      <tr>
+        <th>Month</th>
+        <th>Savings</th>
+      </tr>
+    
+    </table>
+HTML Table Padding & Spacing
+  - HTML tables can adjust the padding inside the cells, and also the space between the cells.
+
+  Cell Padding
+    - (General for all) Cell padding is the space between the cell edges and the cell content.
+        th, td {
+          padding: 15px;
+        }
+    - (Specific to some) Cell padding is the space between the cell edges and the cell content.
+      th, td {
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-left: 30px;
+        padding-right: 40px;
+      }
+    - (Lined Padding) 
+        table {
+          border-spacing: 30px;
+        }
+HTML Table Colspan & Rowspan
+    - HTML tables can have cells that span over multiple rows and/or columns.
+      <table style="width:100%">
+    <tr>
+      <th colspan="2">Name</th>
+      <th>Age</th>
+    </tr>
+    <tr>
+      <td>Jill</td>
+      <td>Smith</td>
+      <td>43</td>
+    </tr>
+    <tr>
+      <td>Eve</td>
+      <td>Jackson</td>
+      <td>57</td>
+    </tr>
+
+    - To make a cell span over multiple rows, use the rowspan attribute:
+      <table>
+        <tr>
+          <th>Name</th>
+          <td>Jill</td>
+        </tr>
+        <tr>
+          <th rowspan="2">Phone</th>
+          <td>555-1234</td>
+        </tr>
+        <tr>
+          <td>555-8745</td>
+      </tr>
+      </table>
+
+HTML Table Styling
+  - If you add a background color on every other table row, you will get a nice zebra stripes effect.
+  - To style every other table row element, use the :nth-child(even) selector like this:
+    tr:nth-child(even) {
+      background-color: #D6EEEE;
+    }
+  - To style every other table row element, use the :nth-child(even) selector like this:
+    td:nth-child(even), th:nth-child(even) {
+      background-color: #D6EEEE;
+    }
+  - You can combine the styling from the two examples above and you will have stripes on every other row and every other column.
+      tr:nth-child(even) {
+        background-color: rgba(150, 212, 212, 0.4);
+      }
+      
+      th:nth-child(even),td:nth-child(even) {
+        background-color: rgba(150, 212, 212, 0.4);
+      }
+  - horizontal dividers
+    tr {
+      border-bottom: 1px solid #ddd;
+    }
+  - Hoverable Talbe
+    tr:hover {background-color: #D6EEEE;}
+
+HTML Table Colgroup
+    <table style="width: 100%;">
+    <colgroup>
+      <col span="2" style="background-color: #D6EEEE">
+    </colgroup>
+    <tr>
+    <th>MON</th>
+    <th>TUE</th>
+    <th>WED</th>
+    <th>THU</th>
+    <th>FRI</th>
+    <th>SAT</th>
+    <th>SUN</th>
+    </tr>
+    <tr>
+    
+    </table>
+#Multipe Col Elements
+  -If you want to style multiple columns with different styles, use more than one <col> element inside the <colgroup>:
+    <table style="width: 100%;">
+      <colgroup>
+        <col span="2" style="background-color: #D6EEEE">
+        <col span="3" style="background-color: pink">
+      </colgroup>
+    <tr>
+    <th>MON</th>
+    <th>TUE</th>
+    <th>WED</th>
+    <th>THU</th>
+    <th>FRI</th>
+    <th>SAT</th>
+    <th>SUN</th>
+    </tr>
+    
+    </tr>
+    </table>
+#Empty Colgroups
+  - If you want to style columns in the middle of a table, insert an "empty" <col> element (with no styles) for the columns before:
+    <table style="width: 100%;">
+    <colgroup>
+      <col span="3">
+      <col span="2" style="background-color: pink">
+    </colgroup>
+    <tr>
+    <th>MON</th>
+    <th>TUE</th>
+    <th>WED</th>
+    <th>THU</th>
+    <th>FRI</th>
+    <th>SAT</th>
+    <th>SUN</th>
+    
+    </tr>
+    </table>
+#Hide Columns
+  - You can hide columns with the visibility: collapse property:
+    <table style="width: 100%;">
+    <colgroup>
+        <col span="2">
+        <col span="3" style="visibility: collapse">
+      </colgroup>
+    <tr>
+    <th>MON</th>
+    <th>TUE</th>
+    <th>WED</th>
+    <th>THU</th>
+    <th>FRI</th>
+    <th>SAT</th>
+    <th>SUN</th>
+    </tr>
+    </table>
+----------------------------------------------------------------------------------------------------------------------------------------------------
