@@ -67,4 +67,67 @@ OUTLINE:
       </dl> 
 ----------------------------------------------------------------------------------------------------------------------------------------------------
    #HTML BLOCK & INLINE
+      -Every HTML element has a default display value, depending on what type of element it is.
+      -The two most common display values are block and inline.
+
+    Block Level Elements:
+        <p> and <div> block-level elements that will always start on a new line, taking the full width avaliable.
+        <p> - element defines a paragraph in an HTML document.
+        <div> - element defines a division or a section in an HTML document.
+
+      <address> | <dt> | <hr> | <section>
+      <article> | <fieldset> | <li> | <table>
+      <aside> | <figcaption> | <main> | <tfoot>
+      <blockquote> | <figure> | <nav> | <ul>
+      <canvas> | <footer> | <noscript> | <video>
+      <dd> | <form> | <ol> |
+      <div> | <h1>-<h6> | <p>
+
+    Inline Elements: 
+      An inline element does not start on a new line.
+      An inline element only takes up as much width as necessary.
+      <p>This is an inline span <span style="border: 1px solid black">Hello World</span> element inside a paragraph.</p>
+
+      <a> | <cite> | <label> | <small> | <var>
+      <abbr> | <code> | <map> | <span>
+      <acronym> | <dfn> | <object> | <strong> 
+      <b> | <em> | <output> | <sub> 
+      <bdo> | <i> | <q> | <sup>
+      <big> | <img> | <samp> | <textarea> 
+      <br> | <input> | <script> | <time>
+      <button> | <kbd> | <select> | <tt> 
+
+    <Div> Elements: 
+      The <div> element is often used as a container for other HTML elements.
+      The <div> element has no required attributes, but style, class and id are common.
+      
+      <div style="background-color:black;color:white;padding:20px;">
+        <h2>London</h2>
+        <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+      </div>
+
+    The <span> Element:
+      The <span> element is an inline container used to mark up a part of a text, or a part of a document.
+      The <span> element has no required attributes, but style, class and id are common.
+
+      <p>My mother has <span style="color:blue;font-weight:bold;">blue</span> eyes and my father has 
+      <span style="color:darkolivegreen;font-weight:bold;">dark green</span> eyes.</p>
+----------------------------------------------------------------------------------------------------------------------------------------------------
+   #HTML DIV
+      The <div> element is used as a container for other HTML elements.
+      The <div> element is by default a block element, meaning that it takes all available width, and comes with line breaks before and after.
+
+      <style>
+          div {
+            background-color: #FFF4A3;
+          }
+      </style>
+      Lorem Ipsum <div>I am a div</div> dolor sit amet.
+      <p>The yellow background is added to demonstrate the footprint of the DIV element.</p>
+
+      <div> as a container
+
+
+
+  
 
