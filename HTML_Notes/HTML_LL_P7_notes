@@ -155,3 +155,89 @@ Default Filenames:
   
   If your server is configured only with "index.html" as the default filename, your file must be named "index.html", and not "default.html".
 ----------------------------------------------------------------------------------------------------------------------------------------------------
+  #HTML ENTITIES: Reserved characters in HTML must be replaced with entities.  >, < signs in your HTML text, the browser might mix them with tags.
+
+    &nbsp; - non-breaking space - &#160; 
+    &lt; - less than - &#60; <
+    &gt; - greater than - &#62; > 
+    &amp; - ampersand - &#38; & 
+    &quot; - double quotation mark - &#34; ""
+    &apos; - single quotation mark - &#39; ''
+    &cent; - cent -  &#162; ¢
+    &pound; - pound - &#163; £
+    &yen - yen - &#165; ¥
+    &euro; - euro - &#8364; €
+    &copy; - copyright - &#169; ©
+    &reg; - registered trademark - &#174; ®
+    trade; - trademark - &#8482; ™
+
+    Combining Diacritical Marks: 
+    Mark | Character | Construct | Result
+     ̀	a	      a          &#768;	      à  
+     ́	a	      a          &#769;	      á
+     ̂	a	      a          &#770;	      â
+     ̃	a	      a          &#771;	      ã
+     ̀	O	      O          &#768;	      Ò
+     ́	O	      O          &#769;	      Ó
+    ̂	O	      O          &#770;	      Ô
+     ̃	O	      O          &#771;	      Õ
+----------------------------------------------------------------------------------------------------------------------------------------------------
+  #HTML SYMBOLS: Symbols or letters that are not present on your keyboard can be added to HTML using entities.
+                  You can use the entity name or the entity number (a decimal or a hexadecimal reference)
+
+      <p>I will display &euro;</p>
+      <p>I will display &#8364;</p>
+      <p>I will display &#x20AC;</p>
+
+  Some HTML Symbol Entities
+  Char | Number | Entity | Description
+    ©	    &#169;	&copy;	  COPYRIGHT
+    ®	    &#174;	&reg;	    REGISTERED TRADEMARK
+    €	    &#8364;	&euro;	  EURO SIGN
+    ™	    &#8482;	&trade;	  TRADEMARK
+    ←	    &#8592;	&larr;	  LEFT ARROW
+    ↑	    &#8593;	&uarr;	  UP ARROW
+    →	    &#8594;	&rarr;	  RIGHT ARROW
+    ↓	    &#8595;	&darr;	  DOWN ARROW
+    ♠	    &#9824;	&spades;	SPADE
+    ♣	    &#9827;	&clubs;	  CLUB
+    ♥	    &#9829;	&hearts;	HEART
+    ♦	    &#9830;	&diams;	  DIAMOND
+
+
+
+
+
+Some HTML Mathematical Entities
+  Char | Number | Entity | Description
+    ∀	  &#8704;	  &forall;	For all
+    ∂	  &#8706;	  &part;	  Partial differential	
+    ∃	  &#8707;	  &exist;	  There exists	
+    ∅  	&#8709;	  &empty;	  Empty sets	
+    ∇	  &#8711;	  &nabla;	  Nabla	
+    ∈	  &#8712;	  &isin;	  Element of	
+    ∉	  &#8713;	  &notin;	  Not an element of	
+    ∋	  &#8715;	  &ni;	    Contains as member	
+    ∏	  &#8719;	  &prod;	  N-ary product	
+    ∑	  &#8721;	  &sum;	    N-ary summation
+
+Some HTML Greek Letters Entities
+  Char | Number | Entity | Description
+    Α	    &#913;	&Alpha;	  GREEK ALPHA	
+    Β	    &#914;	&Beta;	  GREEK BETA	
+    Γ	    &#915;	&Gamma;	  GREEK GAMMA	
+    Δ	    &#916;	&Delta;	  GREEK DELTA	
+    Ε	    &#917;	&Epsilon;	GREEK EPSILON	
+    Ζ	    &#918;	&Zeta;	  GREEK ZETA
+
+More Symbols: 
+    Currency Symbols (€ ₤ ₿ ₡ ₯ ₣ ₽), Arrows A (⟰ ⟱ ⟽ ⟾ ⟻ ⟼), Arrows B(⤀ ⤁ ⤺ ⤻ ⥀), 
+    Arrows (← ↑ → ↓ ⇐ ⇑ ⇒ ⇓), Letterlike Symbols (℃ ℉ Ω ⅂ ⅃ ⅄ ™), Number Forms(Ⅱ Ⅲ Ⅵ ⅛ ⅜ ⅝),
+    Enclosed Alphanumeric (Ⓐ Ⓑ 🄰 🄱 🅐 🅑 ① ②), Arrows C(🠈 🠉 🠊 🠋),  Box Drawings(┌ ┐ └ ┘ ├ ┤ ┬ ┴) 
+    Symbols and Arrows(⬮ ⬯ ⭅ ⭆), Block Elements(▄ ▃ ▅ ▇ ░ ▒ ▓), Weather Symbols (☀ ☁ ☂ ☃ ★ ☆ ☇ ☈),
+    Geometric Shapes(▣ ▧ ▲ △ ◐ ◒ ◧ ◪), Musical Symbols(𝄞 𝄆 𝄇 ♩ ♪ ♫ ♬), Misc Symbols (☊ ⚖ ⛋ ⚜ ☘)
+    Domino & Dices(🁭🁵🂄 ⚁ ⚂ ⚄), Dingbats(✀ ✇ ✈ ✎ ✔ ✜ ✱), Mahjong Tiles(🀀 🀁 🀃 🀅), Astrological Symbols(☿ ♁ ♃ ♆ ☼ ☽ ☾)
+    Card Symbols(♠ ♣ ♥ ♦ 🂡 🂣 🂨), Math Operators(∑ ∃ √ ∏ ≠ ∞ ⨎ ∅), Chess Symbols (♔ ♕ ♘ ♖), Math Symbols(⟁ ⟀ ⟆ ⟮ ⟯ ⟨ ⟩ ⦀ ⧻ ⦿ ⧖)
+    Yin Yang Symbols(☯ ☰ ☱ ☲ ☮ ☸ ☣), Math Alphanumeric(𝚷 𝚫 𝚽 𝛀 𝓪 𝓫 𝓬 𝓭), Recycling Symbols(♲ ♻ ♾ ☢), Misc Technical (⍇ ⍉ ⍾ ⍽ ⌬ ⌇)
+    Life & Religion (⛨ ♰ ♀ ♂), Colored Symbols(⌚ ⏩ ⏪ ☔ ⚽ ⚾), Places & Traffic (⛱ ⛴ ⛟ ⛐ ⚠)
+----------------------------------------------------------------------------------------------------------------------------------------------------
