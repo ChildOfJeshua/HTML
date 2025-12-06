@@ -24,7 +24,7 @@ HTML - standard markup language
 
   #NOTES SUMMATION & SUPPLEMENTAL: https://www.w3schools.com/howto/howto_css_icon_bar.asp
   #PROJECT SECTION:
-      GAIN IDEAS: HTML_extended_P5 - HTML PRACTICE EXAMPLES | WEBSITE GENERAL TEMPLATES | INTERVIEW (CAREER OUTLOOK) | SEMANTIC HTML 
+      GAIN IDEAS: 
       PENDING
       PENDING
       PENDING
