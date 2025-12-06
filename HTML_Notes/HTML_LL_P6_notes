@@ -113,8 +113,88 @@ HTML LAYOUT ELEMENTS:
     CSS flexbox - Use of flexbox ensures that elements behave predictably when the page layout must accommodate different screen sizes and different display devices.
     CSS grid - The Grid Layout Module offers a grid-based layout system, with rows and columns.
 ----------------------------------------------------------------------------------------------------------------------------------------------------
-  #HTML RESPONSIVE
+#HTML RESPONSIVE (WEB DESIGN)
+  To create a responsive website, add the following <meta> tag to all your web pages:
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  Then add image:
+    <img src="img_girl.jpg" style="max-width:100%;height:auto;">
+  Purpose: 
+    Scaling syncs to Browser zoomage altercations
 
-    
+  Show different images according to scaling:
+    <picture>
+      <source srcset="img_smallflower.jpg" media="(max-width: 600px)">
+      <source srcset="img_flowers.jpg" media="(max-width: 1500px)">
+      <source srcset="flowers.jpg">
+      <img src="img_smallflower.jpg" alt="Flowers">
+    </picture>
 
+  Same idea with texts:
+    <h1 style="font-size:10vw">Hello World</h1>
   
+  Media Queries:
+    A media query is a CSS technique that allows you to apply different styles to a webpage based on the device's characteristics, such as screen size, resolution, or orientation.
+  
+      /* Styles for screens smaller than 768px (mobile devices) */
+      @media (max-width: 768px) {
+        body {
+          font-size: 14px;
+        }
+      }
+      
+      /* Styles for screens larger than 768px (tablets and desktops) */
+      @media (min-width: 769px) {
+        body {
+          font-size: 16px;
+        }
+      }
+    
+----------------------------------------------------------------------------------------------------------------------------------------------------
+  #HTML COMPUTERCODE
+    HTML contains several elements for defining user input and computer code.
+      <code>
+      x = 5;
+      y = 6;
+      z = x + y;
+      </code>
+    <kbd> For Keyboard Input
+        <h2>The kbd Element</h2>
+        
+        <p>The kbd element is used to define keyboard input:</p>
+        
+        <p>Save the document by pressing <kbd>Ctrl + S</kbd></p>
+    <samp> =  sample output from a computer program
+      <p>Message from my computer:</p>
+      <p><samp>File not found.<br>Press F1 to continue</samp></p>
+    <pre> - preserve extra whitespace and line-breaks.
+        <pre>
+        <code>
+        x = 5;
+        y = 6;
+        z = x + y;
+        </code>
+        </pre>
+    <var> -  define a variable in programming or in a mathematical expression
+        <p>The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where <var>b</var> is the base, and <var>h</var> is the vertical height.</p>
+  ----------------------------------------------------------------------------------------------------------------------------------------------------
+  #HTML SEMANTICS
+      Semantic elements = elements with a meaning.
+        Examples of non-semantic elements: <div> and <span> - Tells nothing about its content.
+        
+        Examples of semantic elements: <img>, <table>, and <article> - Clearly defines its content.
+          <article> - Defines independent, self-contained content
+          <aside> - Defines content aside from the page content
+          <details> - Defines additional details that the user can view or hide
+          <figcaption> - Defines a caption for a <figure> element
+          <figure> - Specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.
+          <footer> - Defines a footer for a document or section
+          <header> - Specifies a header for a document or section
+          <main> - Specifies the main content of a document
+          <mark> - Defines marked/highlighted text
+          <nav> - 	Defines navigation links
+          <section> - element defines a section in a document. | Chapters, Introduction, News Items, Contact Information
+          <summary> - Defines a visible heading for a <details> element
+          <time> - Defines a date/time
+          <img> - element defines the actual image/illustration. 
+  ----------------------------------------------------------------------------------------------------------------------------------------------------
+
