@@ -241,3 +241,133 @@ More Symbols:
     Yin Yang Symbols(☯ ☰ ☱ ☲ ☮ ☸ ☣), Math Alphanumeric(𝚷 𝚫 𝚽 𝛀 𝓪 𝓫 𝓬 𝓭), Recycling Symbols(♲ ♻ ♾ ☢), Misc Technical (⍇ ⍉ ⍾ ⍽ ⌬ ⌇)
     Life & Religion (⛨ ♰ ♀ ♂), Colored Symbols(⌚ ⏩ ⏪ ☔ ⚽ ⚾), Places & Traffic (⛱ ⛴ ⛟ ⛐ ⚠)
 ----------------------------------------------------------------------------------------------------------------------------------------------------
+Using Emojis in HTML
+    Emojis look like images, but they are not.
+    Emojis are letters (characters) from the UTF-8 (Unicode) character set:
+    UTF-8 covers almost all of the characters and symbols in the world.
+
+   Emoji | Value
+    🗻	&#128507;	
+    🗼	&#128508;	
+    🗽	&#128509;	
+    🗾	&#128510;	
+    🗿	&#128511;	
+    😀	&#128512;	
+    😁	&#128513;	
+    😂	&#128514;	
+    😃	&#128515;	
+    😄	&#128516;	
+    😅	&#128517;
+
+  #The HTML charset Attribute
+    To display an HTML page correctly, a web browser must know the character set used in the page
+    This is specified in the <meta> tag:
+      <meta charset="UTF-8"> 
+          or: If not specified, UTF-8 is the default character set in HTML.
+
+    #Many UTF-8 characters cannot be typed on a keyboard, but they can always be displayed using numbers (called entity numbers):
+      <p>I will display A B C</p>
+      <p>I will display &#65; &#66; &#67;</p
+    #Sizing these characters:
+      <p style="font-size:48px">
+      &#128512; &#128516; &#128525; &#128151;
+      </p>
+----------------------------------------------------------------------------------------------------------------------------------------------------
+  #HTML CHARSETS
+    #History: 
+
+      The ASCII Character Set
+        ASCII was the first character encoding standard for the web.
+        
+        It defined 128 different latin characters that could be used on the internet:
+        
+        English letters (a-z and A-Z)
+        Numbers (0-9)
+        Some special characters: ! $ + - ( ) @ < > . # ?
+      
+      
+      The ANSI Character Set
+        ANSI (Windows-1252) was the first Windows character set:
+        
+        Identical to ASCII for the first 127 characters
+        Special characters from 128 to 159
+        Identical to UTF-8 from 160 to 255
+      
+      The ISO-8859-1 Character Set
+        The default character set for HTML 4 was ISO-8859-1.
+        
+        It supported 256 characters:
+        
+        Identical to ASCII for the first 127 characters
+        Does not use the characters from 128 to 159
+        Identical to ANSI and UTF-8 from 160 to 255
+      
+      The UTF-8 Character Set
+        Identical to ASCII for the values from 0 to 127
+        Does not use the characters from 128 to 159
+        Identical to ANSI and 8859-1 from 160 to 255
+        Continues from the value 256 to 10 000 characters
+----------------------------------------------------------------------------------------------------------------------------------------------------
+  #HTML URL ENCODE
+      A Uniform Resource Locator (URL) is used to address a document (or other data) on the web.
+      A web address like https://www.w3schools.com/html/default.asp follows these syntax rules:
+      SYNTAX: scheme://prefix.domain:port/path/filename
+        scheme - defines the type of Internet service (most common is http or https)
+        prefix - defines a domain prefix (default for http is www)
+        domain - defines the Internet domain name (like w3schools.com)
+        port - defines the port number at the host (default for http is 80)
+        path - defines a path at the server (If omitted: the root directory of the site)
+        filename - defines the name of a document or resource
+----------------------------------------------------------------------------------------------------------------------------------------------------
+HTML Versus XHTML
+    XHTML is a stricter, more XML-based version of HTML.
+    XHTML stands for EXtensible HyperText Markup Language
+    XHTML is a stricter, more XML-based version of HTML
+    XHTML is HTML defined as an XML application
+    XHTML is supported by all major browsers
+
+    Differences to HTML:
+        <!DOCTYPE> is mandatory
+        The xmlns attribute in <html> is mandatory
+        <html>, <head>, <title>, and <body> are mandatory
+        Elements must always be properly nested
+        Elements must always be closed
+        Elements must always be in lowercase
+        Attribute names must always be in lowercase
+        Attribute values must always be quoted
+        Attribute minimization is forbidden
+
+XHTML - <!DOCTYPE ....> Is Mandatory
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+XHTML Elements Must be Properly Nested
+  <b><i>Some text</i></b> is correct not: <b><i>Some text</b></i>
+XHTML Elements Must Always be Closed
+  <p>This is a paragraph</p>
+  <p>This is another paragraph</p>
+XHTML Empty Elements Must Always be Closed
+  CORRECT: 
+    A break: <br />
+    A horizontal rule: <hr />
+    An image: <img src="happy.gif" alt="Happy face" />
+  INCORRECT:
+    A break: <br>
+    A horizontal rule: <hr>
+    An image: <img src="happy.gif" alt="Happy face">
+XHTML Elements Must be in Lowercase
+    <body>
+    <p>This is a paragraph</p>
+    </body>
+XHTML Attribute Names Must be in Lowercase
+    <a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a>
+XHTML Attribute Values Must be Quoted
+    <a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a>
+XHTML Attribute Minimization is Forbidden
+    CORRECT:
+      <input type="checkbox" name="vehicle" value="car" checked="checked" />
+      <input type="text" name="lastname" disabled="disabled" />
+    INCORRECT:
+      <input type="checkbox" name="vehicle" value="car" checked />
+      <input type="text" name="lastname" disabled />
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
