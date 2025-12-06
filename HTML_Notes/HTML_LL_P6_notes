@@ -8,3 +8,51 @@ OUTLINE:
   #HTML COMPUTERCODE
   #HTML SEMANTICS
 ----------------------------------------------------------------------------------------------------------------------------------------------------
+JavaScript makes HTML pages more dynamic and interactive.
+  #Getting Elemental Id:
+      <p>This example writes "Hello JavaScript!" into an HTML element with id="demo":</p> 
+      <p id="demo"></p>
+      
+      <script>
+      document.getElementById("demo").innerHTML = "Hello JavaScript!";
+      </script> 
+
+  #Click Button Effect:
+      <button type="button" onclick="myFunction()">Click Me!</button>
+
+      <p id="demo">This is a demonstration.</p>
+      
+      <script>
+      function myFunction() { 
+        document.getElementById("demo").innerHTML = "Hello JavaScript!";
+      }
+      </script>
+  
+  #Multiple Changes by Button to Text:
+
+    <p id="demo">JavaScript can change the style of an HTML element.</p>
+    
+    <script>
+    function myFunction() {
+      document.getElementById("demo").style.fontSize = "25px";
+      document.getElementById("demo").style.color = "red";
+      document.getElementById("demo").style.backgroundColor = "yellow";
+    }
+    </script>
+    
+    <button type="button" onclick="myFunction()">Click Me!</button>
+
+  #Browser that does not support JavaScript:
+    <p id="demo"></p>
+    
+    <script>
+    document.getElementById("demo").innerHTML = "Hello JavaScript!";
+    </script>
+    
+    <noscript>Sorry, your browser does not support JavaScript!</noscript>
+    
+    <p>A browser without support for JavaScript will show the text written inside the noscript element.</p>
+  # <script> - Defines a client-side script
+  # <noscript> -  Defines an alternate content for users that do not support client-side scripts
+----------------------------------------------------------------------------------------------------------------------------------------------------
+v  #HTML FILE PATHS
