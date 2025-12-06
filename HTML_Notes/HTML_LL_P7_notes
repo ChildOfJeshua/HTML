@@ -8,3 +8,150 @@ OUTLINE:
   #HTML URL ENCODE
   #HTML HTML VS XHTML
 ----------------------------------------------------------------------------------------------------------------------------------------------------
+  #HTML STUDY GUIDE
+    Consistent, clean, and tidy HTML code makes it easier for others to read and understand your code.
+
+ALWAYS DECLARE DOCUMENT TYPE: Always declare the document type as the first line in your document.
+<!DOCTYPE html>
+
+Use Lowercase Element Names: Mixing uppercase and lowercase names looks bad | Developers normally use | looks cleaner | easier to type
+  <body>
+  <p>This is a paragraph.</p>
+  </body>
+
+Close All HTML Elements: In HTML, you do not have to close all elements (for example the <p> element) but looks cleaner
+  <section>
+    <p>This is a paragraph.</p>
+    <p>This is a paragraph.</p>
+  </section>
+
+Use Lowercase Attribute Names: Mixing uppercase and lowercase names looks bad | Developers normally use | looks cleaner | easier to type
+  <a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a>
+
+Always Quote Attribute Values: Developers normally quote | Quoted values are easier to read | You MUST use quotes if the value contains spaces
+  <table class="striped">
+
+Always Specify alt, width, and height for Images: reduces flickering, because the browser can reserve space for the image before loading
+  <img src="html5.gif" alt="HTML5" style="width:128px;height:128px">
+
+Spaces and Equal Signs: But space-less is easier to read and groups entities better together.
+  <link rel="stylesheet" href="styles.css"> vs <link rel = "stylesheet" href = "styles.css">
+
+Avoid Long Code Lines: When using an HTML editor, it is NOT convenient to scroll right and left to read the HTML code.
+
+Blank Lines and Indentation: 
+  Do not add blank lines, spaces, or indentations without a reason.
+  For readability, add blank lines to separate large or logical code blocks.
+  For readability, add two spaces of indentation. Do not use the tab key.
+
+      <body>
+      
+      <h1>Famous Cities</h1>
+      
+      <h2>Tokyo</h2>
+      <p>Tokyo is the capital of Japan, the center of the Greater Tokyo Area, and the most populous metropolitan area in the world.</p>
+      
+      <h2>London</h2>
+      <p>London is the capital city of England. It is the most populous city in the United Kingdom.</p>
+      
+      <h2>Paris</h2>
+      <p>Paris is the capital of France. The Paris area is one of the largest population centers in Europe.</p>
+      
+      </body>
+
+Never Skip the <title> Element: For search engine optimization (SEO)! 
+
+  <title>HTML Style Guide and Coding Conventions</title>
+
+Omitting <html> and <body>?: 
+  Omitting <html> and <body> can also crash DOM and XML software.
+  Omitting <body> can produce errors in older browsers.
+
+Omitting <head>?:
+  Browsers will add all elements before <body>, to a default <head> element.
+
+Close Empty HTML Elements?
+    Both allowed: <meta charset="utf-8"> vs  <meta charset="utf-8" />
+      If you expect XML/XHTML software to access your page, keep the closing slash (/), because it is required in XML and XHTML.
+
+Add the lang Attribute: declare the language of the Web page | assist search engines and browsers.
+    <!DOCTYPE html>
+    <html lang="en-us">
+    <head>
+      <title>Page Title</title>
+
+Meta Data: both the language and the character encoding  should be defined as early as possible in an HTML document.
+
+  <!DOCTYPE html>
+  <html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Page Title</title>
+  </head>
+
+Setting The Viewport: This gives the browser instructions on how to control the page's dimensions and scaling.
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+HTML Comments: Short and Long Comments
+    
+    Short: <!-- This is a comment -->
+    
+    Long: 
+        <!--
+          This is a long comment example. This is a long comment example.
+          This is a long comment example. This is a long comment example.
+        -->
+Using Style Sheets: Use simple syntax for linking to style sheets (the type attribute is not necessary):
+
+  <link rel="stylesheet" href="styles.css">
+
+  Short CSS rules written compressed:
+    p.intro {font-family:Verdana;font-size:16em;}
+
+  Long CSS rules written over multiple lines:
+    body {
+      background-color: lightgrey;
+      font-family: "Arial Black", Helvetica, sans-serif;
+      font-size: 16em;
+      color: black;
+    }
+
+Loading JavaScript in HTML: Use simple syntax for loading external scripts (the type attribute is not necessary):
+    <script src="myscript.js">
+
+Accessing HTML Elements with JavaScript: 
+
+    <p id="Demo">This is paragraph 1.</p>
+    <p id="demo">This is paragraph 2.</p>
+    
+    <script>
+    // Only paragraph 2 will be overwritten
+    document.getElementById("demo").innerHTML = "HELLO.";
+    </script>
+
+Use Lower Case File Names:
+    Some web servers (Apache, Unix) are case sensitive about file names: "london.jpg" cannot be accessed as "London.jpg"
+    Other web servers (Microsoft, IIS) are not case sensitive: "london.jpg" can be accessed as "London.jpg".
+
+File Extensions:
+
+  HTML files should have a .html extension (.htm is allowed).
+  
+  CSS files should have a .css extension.
+  
+  JavaScript files should have a .js extension.
+
+Differences Between .htm and .html?
+
+  There is no difference between the .htm and .html file extensions!
+  
+  Both will be treated as HTML by any web browser and web server.
+
+Default Filenames: 
+
+  When a URL does not specify a filename at the end (like "https://www.w3schools.com/"), the server just adds a default filename,
+    such as "index.html", "index.htm", "default.html", or "default.htm".
+  
+  If your server is configured only with "index.html" as the default filename, your file must be named "index.html", and not "default.html".
+----------------------------------------------------------------------------------------------------------------------------------------------------
