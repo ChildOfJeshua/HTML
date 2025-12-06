@@ -72,5 +72,49 @@ Absolute File Paths:
   - An absolute file path is the full URL to a file:
     <img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain">
 ----------------------------------------------------------------------------------------------------------------------------------------------------
+#HTML HEAD
+  The HTML <head> element is a container for the following elements: <title>, <style>, <meta>, <link>, <script>, and <base>.
+  <title> Shown in the browser's title bar or in the page's tab.
+  <style> style information for a single HTML page. 
+  <link> element defines the relationship between the current document and an external resource, often used to link to external style sheets.
+  <meta> typically used to specify the character set, page description, keywords, author of the document, and viewport settings.
+    <meta charset="UTF-8"> Character set used.
+    <meta name="keywords" content="HTML, CSS, JavaScript"> KeyWord For Search Engines.
+    <meta name="description" content="Free Web tutorials"> Description of your web page.
+    <meta name="author" content="John Doe"> Define the author of a page.
+    <meta http-equiv="refresh" content="30"> Refresh document every 30 seconds
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> Setting the viewport foor good visiblity on all devices.
+      The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
+      The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.
 
+  <script> -  define client-side JavaScripts.
+      <script>
+      function myFunction() {
+        document.getElementById("demo").innerHTML = "Hello JavaScript!";
+      }
+      </script>
+  <base> - Specify a default URL and a default target for all links on a page.
+      <base href="https://www.w3schools.com/" target="_blank">
+----------------------------------------------------------------------------------------------------------------------------------------------------
+HTML LAYOUT ELEMENTS:
 
+    <header> - Defines a header for a document or a section
+    <nav> - Defines a set of navigation links
+    <section> - Defines a section in a document
+    <article> - Defines independent, self-contained content
+    <aside> - Defines content aside from the content (like a sidebar)
+    <footer> - Defines a footer for a document or a section
+    <details> - Defines additional details that the user can open and close on demand
+    <summary> - Defines a heading for the <details> element
+ 
+    There are four different techniques to create multicolumn layouts. Each technique has its pros and cons
+    CSS frameworks - If you want to create your layout fast, you can use a CSS framework, like W3.CSS or Bootstrap.
+    CSS float property -  Floating elements are tied to the document flow, which may harm the flexibility.
+    CSS flexbox - Use of flexbox ensures that elements behave predictably when the page layout must accommodate different screen sizes and different display devices.
+    CSS grid - The Grid Layout Module offers a grid-based layout system, with rows and columns.
+----------------------------------------------------------------------------------------------------------------------------------------------------
+  #HTML RESPONSIVE
+
+    
+
+  
